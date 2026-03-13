@@ -1,0 +1,28 @@
+{
+  "ProcessChain": [
+    {
+      "Name": "S_10_Kostenstellen",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Strukturaufbau der Kostenstellen aus den verdichteten Kostenarteninformationen (Tabelle: DTL_KST_BELEGE)"
+    },
+    {
+      "Name": "S_20_Kostenarten",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Strukturaufbau der Kostenarten aus den verdichteten Kostenarteninformationen (Tabellen: DTL_KST_BUCHUNGEN und DTL_KST_BELEGE)"
+    },
+    {
+      "Name": "S_21_Kostenarten_Buchungen",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Strukturaufbau der Kostenarten aus den Einzelbuchungen (Tabelle: DTL_KST_BELEGE)"
+    },
+    {
+      "Name": "D_10_DTL_KST_BELEGE",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Einzelbelege  laden (Tabelle: DTL_KST_BELEGE)"
+    }
+  ]
+}

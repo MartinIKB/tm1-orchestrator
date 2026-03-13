@@ -1,0 +1,23 @@
+# Logs
+logs/
+
+# Graphics
+gfx/
+
+# GUI
+gui/
+
+# Secrets
+config/tm1o.json
+config/git-repositories.json
+
+# Temp
+*.log
+*.tmp
+
+# VSCode
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini

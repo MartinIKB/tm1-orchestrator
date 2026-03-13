@@ -1,0 +1,27 @@
+{
+  "defaults": {
+    "remoteName": "origin",
+    "mainBranch": "main",
+    "rawBranch": "raw-ent",
+    "sshConfigPath": "C:/Users/<USER>/.ssh/config",
+    "tm1RepoRoot": "U:/GitHub/TM1",
+    "tm1BuildRoot": "U:/GitHub/TM1_BUILD",
+    "repositoryUrlPattern": "git@github.com:<GITHUB_USER>/{repositoryName}.git"
+  },
+  "repositories": [
+    {
+      "instance": "KST_2026",
+      "repositoryName": "tm1-kst-2026"
+    },
+    {
+      "instance": "BER_26",
+      "repositoryName": "tm1-ber-26",
+      "rawBranch": "raw-special"
+    },
+    {
+      "instance": "NVR_26",
+      "repositoryName": "tm1-nvr-26",
+      "localBuildPath": "U:/GitHub/TM1_BUILD_CUSTOM/NVR_26"
+    }
+  ]
+}

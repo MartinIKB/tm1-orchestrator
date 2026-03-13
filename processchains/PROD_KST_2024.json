@@ -1,0 +1,82 @@
+{
+  "ProcessChain": [
+    {
+      "Name": "S_10_Kostenstellen",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Kostenstellenstruktur (Parent / Child) in der Dimension Kostenstellen anlegen (nur neue Kostenstellen)"
+    },
+    {
+      "Name": "S_11_Kostenstellen_Mauelle_Aenderungen",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Manuelle Aenderungen aus der CSV Datei auslesen und Kostenstellen in der Hierarchie (Parent / child) anlegen"
+    },
+    {
+      "Name": "S_20_Kostenarten",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Kostenartenstruktur  (Parent / Child) in der Dimension Kostenarten anlegen (nur neue Kostenarten)"
+    },
+    {
+      "Name": "S_21_Kostenarten_Meldedaten",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Kostenarten aus der Meldedatenanlieferung ind er Heirarchie Kostenarten anlegen."
+    },
+    {
+      "Name": "D_10_DTL_KST_BUCHUNGEN",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Daten laden (Tabelle: DTL_KST_BUCHUNGEN) - Granularität: Kontenebene"
+    },
+    {
+      "Name": "D_20_DTL_KST_PLANDATEN",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Plandaten laden (Tabelle: DTL_KST_PLANDATEN)."
+    },
+    {
+      "Name": "D_21_DTL_KST_PLANDATEN_Version1",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Plandaten auf Version 1 laden (Tabelle: DTL_KST_PLANDATEN)."
+    },
+    {
+      "Name": "D_30_VAK",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Vollzeitarbeitskraefte (VAK) laden. Vorherige, manuelle Anleiferung erforderlich."
+    },
+    {
+      "Name": "D_40_DVAK",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Durchschittliche Vollzeitarbeitskräfte (DVAK) laden. Vorherige, manuelle Anleiferung erforderlich."
+    },
+    {
+      "Name": "D_50_MELDEDATEN",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Die auf monatsbasis vorbereiteten Daten aus der Tabelle DTL_KST_MELDEDATEN_MONAT laden. (manuelle Anlieferungen erforderlich)"
+    },
+    {
+      "Name": "D_52_MELDEDATEN_Plan",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Planmeldedaten aus der Tabelle DTL_KST_MELDEDATEN_PLAN laden (manuelle Anlieferung erforderlich)"
+    },
+    {
+      "Name": "Z_30_Export_Kostenstellen",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Kostenstellenstruktur (Parent / Child) in die relationale Tabelle ALLG_HIERARCHIEN uebertragen"
+    },
+    {
+      "Name": "Z_40_Export_Kostenarten",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": "Kostenartenstruktur (Parent / Child) in die relationale Tabelle ALLG_HIERARCHIEN uebertragen"
+    }
+  ]
+}

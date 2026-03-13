@@ -1,0 +1,106 @@
+{
+  "ProcessChain": [
+    {
+      "Name": "01_Auslesen_Vertriebshierachie",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "02_Export_Produktzugehörigkeit",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "12_S_VVS_3",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "20_S_KD",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "21_S_KD_1",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "30_S_VS",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "40_S_VE",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "50_S_ZEIT",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "60_S_PVS",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "70_D_VE",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "71_D_VE_2",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "72_ D_VE_3",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "73_D_VE_4",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "80_D_VOLGJA",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "90_Export_STG_NVR_KD_VVS_BER",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "91_Export_Provisionen_NVR",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    },
+    {
+      "Name": "92_Export_OUT_BR_EUR_und_OUT_BR_MRG",
+      "Parameters": [],
+      "OnError": "STOP",
+      "Description": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+    "maxKeepLogs": 5,
+    "RetrySettings": {
+    "MaxRetries": 3,
+    "RetryDelaySec": 10,
+    "TimeoutSec": 600
+  },
+  "Environments": [
+    {
+      "Name": "DEV",
+      "CAMNamespace": "LDAP",
+      "ApiKey": "your_secret_api_key_dev",
+      "Instances": [
+        {
+          "Name": "Finance",
+          "TM1RestBase": "https://your_server_name_dev.planning-analytics.cloud.ibm.com/tm1/api/Finance/api/v1"
+        },
+        {
+          "Name": "HR",
+          "TM1RestBase": "https://your_server_name_dev.planning-analytics.cloud.ibm.com/tm1/api/HR/api/v1"
+        },
+        {
+          "Name": "Test_Instance",
+          "TM1RestBase": "https://your_server_name_dev.planning-analytics.cloud.ibm.com/tm1/api/Test_Instance/api/v1"
+        }
+      ]
+    },
+    {
+      "Name": "TEST",
+      "CAMNamespace": "LDAP",
+      "ApiKey": "your_secret_api_key_test",
+      "Instances": [
+        {
+          "Name": "Finance",
+          "TM1RestBase": "https://your_server_name_test.planning-analytics.cloud.ibm.com/tm1/api/Finance/api/v1"
+        },
+        {
+          "Name": "HR",
+          "TM1RestBase": "https://your_server_name_test.planning-analytics.cloud.ibm.com/tm1/api/HR/api/v1"
+        },
+        {
+          "Name": "Test_Instance",
+          "TM1RestBase": "https://your_server_name_test.planning-analytics.cloud.ibm.com/tm1/api/Test_Instance/api/v1"
+        }
+      ]
+    },
+    {
+      "Name": "PROD",
+      "CAMNamespace": "LDAP",
+      "ApiKey": "your_secret_api_key_prod",
+      "Instances": [
+        {
+          "Name": "Finance",
+          "TM1RestBase": "https://your_server_name_prod.planning-analytics.cloud.ibm.com/tm1/api/Finance/api/v1"
+        },
+        {
+          "Name": "HR",
+          "TM1RestBase": "https://your_server_name_prod.planning-analytics.cloud.ibm.com/tm1/api/HR/api/v1"
+        },
+        {
+          "Name": "Test_Instance",
+          "TM1RestBase": "https://your_server_name_prod.planning-analytics.cloud.ibm.com/tm1/api/Test_Instance/api/v1"
+        }
+      ]
+    }
+  ]
+}
